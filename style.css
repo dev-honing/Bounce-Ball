@@ -29,15 +29,5 @@
   background-color: #ffff;
   border: 2px solid #000;
   border-radius: 50%;
-  animation: bounce 1s backwards infinite;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0%);
-  }
-
-  60% {
-    transform: translateY(-5rem);
-  }  
-}
