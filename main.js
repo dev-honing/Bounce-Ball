@@ -4,6 +4,7 @@ var ball = document.querySelector('.ball');
 
 window.addEventListener('keydown', (event) => {
   if (event.code === 'AltLeft'){
+    event.preventDefault(); // 이벤트의 기본 동작을 취소 -> 포커스 이동 방지
     jumpBall();
   }
 })
