@@ -1,6 +1,7 @@
 // DOM 제어를 위한 변수 선언
 var root = document.getElementById('root');
 var ball = document.querySelector('.ball');
+var ballHeight = ball.offsetHeight;
 
 window.addEventListener('keydown', (event) => {
   if (event.code === 'AltLeft'){
@@ -9,5 +10,5 @@ window.addEventListener('keydown', (event) => {
   }
 })
 function jumpBall() {
-  console.log('테스트');
+  ball.style.height = ball.offsetHeight + 1 + 'px';
 }
